@@ -9,11 +9,11 @@ contract Meta {
         string name;
         string description;
         address owner;
-        bool enablePassports;
-        bool enableDelivery;
-        bool enableBridges;
-        string[] metaAccesslist;
-        string[] idBlacklist;
+        // bool enablePassports;
+        // bool enableDelivery;
+        // bool enableBridges;
+        // string[] metaAccesslist;
+        // string[] idBlacklist;
     }
 
     State state;
@@ -23,25 +23,19 @@ contract Meta {
 
     constructor(
         string memory _name,
-        string memory _description,
-        bool _enablePassports,
-        bool _enableDelivery,
-        bool _enableBridges,
-        string[] memory _metaAccesslist,
-        string[] memory _idBlacklist
+        string memory _description // bool _enablePassports,
     ) {
         state.name = _name;
         state.description = _description;
         state.owner = tx.origin;
-        state.enablePassports = _enablePassports;
-        state.enableDelivery = _enableDelivery;
-        state.enableBridges = _enableBridges;
-        state.metaAccesslist = _metaAccesslist;
-        state.idBlacklist = _idBlacklist;
+        // state.enablePassports = _enablePassports;
+        // state.enableDelivery = _enableDelivery;
+        // state.enableBridges = _enableBridges;
+        // state.metaAccesslist = _metaAccesslist;
+        // state.idBlacklist = _idBlacklist;
 
         _generateIdentityFactory();
         _generateAssetsManager();
-        // _generatePassportsManager();
         // _generateDeliveryManager();
     }
 

@@ -2,7 +2,7 @@
   "name": "hardhat-project",
   "scripts": {
     "compile": "hardhat compile",
-    "deploy": "hardhat run scripts/deploy.ts --network matic"
+    "deploy": "hardhat run scripts/deploy.ts --network goerli"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",

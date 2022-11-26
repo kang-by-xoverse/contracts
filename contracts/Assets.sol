@@ -18,11 +18,11 @@ contract AssetsManager is ERC721URIStorage {
         meta = msg.sender;
     }
 
-    function mint(string tokenURI) public {
+    function mint(string memory tokenURI) public {
         _tokenIds.increment();
         uint256 newItemId = _tokenIds.current();
         _safeMint(msg.sender, newItemId);
-        tokenIdToLevels[newItemId] = 0;
+        // tokenIdToLevels[newItemId] = 0;
         _setTokenURI(newItemId, tokenURI);
     }
 }
