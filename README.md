@@ -1,6 +1,6 @@
 # The Kang Protocol Solidity Contracts
 
-> The current MetaFactory is deployed at [0xCBA8a7Ca3be19B8b64e7fCd9678e812adC00b236](https://goerli.etherscan.io/address/0xCBA8a7Ca3be19B8b64e7fCd9678e812adC00b236)
+> The current MetaFactory is deployed at [0xC1AfE0D67664570B08B6CBb10233CCD939Bb2De4](https://goerli.etherscan.io/address/0xC1AfE0D67664570B08B6CBb10233CCD939Bb2De4)
 
 
 ## Overview
